@@ -55,14 +55,14 @@ header {
 }
 
 .sideMenuWrapper {
-    background-color: rgba(0,0,0,0.6);
-    position:fixed;
+    /* background-color: rgba(0,0,0,0.6); */
+    /* position:fixed;
     top: 0;
     left:0;
     width: 100%;
-    height: 100%;
+    height: 100%; */
     display: none;
-    z-index: 4;
+    /* z-index: 4; */
 }
 
 .sideMenuWrapper.active {
@@ -74,31 +74,52 @@ header {
     display: inline-block;
     font-size: 30px;
     padding: 2px 10px;
-    margin: -10px 0 20px -10px;
+    margin: 0;
     cursor: pointer;
+    position: absolute;
+    right: 5px;
+    top: 5px;
 }
 
-
+.sideBaroverlay {
+    background-color: rgba(0,0,0,0.6);
+    position:fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    /* display: none; */
+    z-index: 3;
+}
 .menuWrapper {
     background-color: hsl(49, 96%, 50%);
-    padding: 20px;
+    padding: 50px 0 25px;
     width: 25%;
     height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4;
 }
 
+.scrollWrapper {
+    padding: 10px 20px;
+    overflow-y: auto;
+    max-height: calc(100vh - 30px);
+}
 .menuWrapper ul {
     padding: 0;
     margin: 0;
     list-style: none;
 }
 
-.menuWrapper > ul > li {
+.scrollWrapper > ul > li {
     display: block;
     margin-bottom: 15px;
 }
 
-.menuWrapper > ul > li > a ,
-.menuWrapper > ul > li > p{
+.scrollWrapper > ul > li > a ,
+.scrollWrapper > ul > li > p{
     font-size: 20px;
     text-transform: uppercase;
     font-weight: 700;
@@ -187,12 +208,8 @@ header {
     line-height: 26px;
 }
 
-
-
-
-
 .keyProjectsWrapper {
-    padding: 60px 0;
+    padding: 60px 0 30px;
 }
 
 .keyProjectsContainer {
@@ -231,6 +248,12 @@ header {
     text-align: center;
     padding: 20px;
     margin: 0 auto 30px;
+    border-top:6px solid #007E7A;
+    background-color: #fff;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    position: relative;
+    overflow: hidden;
 }
 
 .projectItemContainer img {
@@ -243,6 +266,7 @@ header {
 .projectItemContainer h4 {
     font-size: 21px;
     margin-bottom: 10px;
+    color: #007E7A;
 }
 
 .projectItemContainer p {
@@ -250,16 +274,60 @@ header {
     text-align: center;
 }
 
-.postSection {
-    border:1px solid;
-    padding: 60px;
+.moreDetailsWrapper {
+    position: absolute;
+    display: flex;
+    left:0;
+    bottom: -100%;
+    right:0;
+    height:100%;
+    background-color: rgba(0,0,0,0.5);
+    transition: bottom 0.3s;
+    justify-content: center;
+    align-items: center;
+}
 
+.moreDetailsWrapper a {
+    display: inline-block;
+    width: 80%;
+    height: 46px;
+    background-color: #facd07;
+    color: #fff;
+    padding: 10px 10px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.projectItemContainer:hover .moreDetailsWrapper,
+.projectItemContainer:focus .moreDetailsWrapper {
+    /* display: block; */
+    bottom: 0;
+    transition: bottom 0.3s;
+}
+
+.postSection {
+    padding: 0px 0 60px;
 }
 
 .postSection h3 {
     font-size: 24px;
     line-height: 34px;
-    margin-bottom: 25px;
+    margin-bottom: 65px;
+    position: relative;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.postSection h3:after {
+    position: absolute;
+    bottom: 0px;
+    display: block;
+    width:100px;
+    content: "";
+    margin:0 auto;
+    left:0;
+    right:0;
+    border-bottom:4px solid #007E7A;
 }
 
 .blogsList {

@@ -16,3 +16,5 @@ Refer this page for something Creativity can be added - https://www.rml.com.au/
 
 Yellow : #facd07  ||  RGB ( 250,205,7);
 Grey   : #f5f5f5  ||  RGB ( 245,245,245); 
+Blue   : #007dc5 ; 
+Olive  : #007E7A ;
