@@ -156,9 +156,199 @@ header {
 }
 
 .bannerWrapper {
+    /* height: 300px;
+    padding: 60px 0; */
+    /* text-align: center; */
+    color: #fff;
+}
+
+.slider {
+    background-size: cover;
+    height: calc(100vh - 96px);
+}
+
+.slider-1 {
+    background-image: url('../images/CopperCliffSmelter.jpg');
+}
+
+.slider-2 {
+    background-image: url('../images/corporate-update-video.png');
+}
+
+.slider-3 {
+    background-image: url('../images/DSC01071.jpg');
+}
+
+.slider-4 {
+    background-image: url('../images/DSC01071.jpg');
+}
+
+.slider-content {
+    position: absolute;
+    top: 140px;
+    left: 100px;
+}
+
+.slick-prev, .slick-next {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background: #fff;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #fff;
+    outline: 0;
+    font-size: 0;
+}
+
+.slick-prev:focus, .slick-next:focus {
+    outline: 0;
+}
+
+.slick-prev {
+    position: absolute;
+    left: 15px;
+    z-index: 1;
+}
+
+.slick-prev::before {
+    content: '\f053';
+    font-family: "Font Awesome 5 Free";
+    font-weight: normal;
+    color: #007dc5 !important;
+    font-size: 20px;
+}
+
+.slick-next::before {
+    content: '\f054';
+    font-family: "Font Awesome 5 Free";
+    font-weight: normal;
+    color: #007dc5 !important;
+    font-size: 20px;
+}
+
+.slick-next {
+    position: absolute;
+    right: 15px;
+}
+
+.slick-dots {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 145px;
     height: 300px;
-    padding: 60px 0;
-    text-align: center;
+    position: absolute;
+    top: 155px;
+    /* border: 1px solid #007dc5; */
+    padding: 0;
+    right: 100px;
+}
+
+.slick-dots li {
+    list-style-type: none;
+    position: absolute;
+}
+
+.slick-dots li:nth-child(2) {
+    left: 62px;
+    top: 33px;
+}
+
+.slick-dots li:nth-child(1)::after, .slick-dots li:nth-child(2)::after, 
+.slick-dots li:nth-child(3)::after, .slick-dots li:nth-child(4)::after,
+.slick-prev::before, .slick-next::before {
+    color: #fff;
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+.slick-dots li:hover {
+    cursor: pointer;
+}
+
+.slick-dots li:nth-child(1)::after {
+    content: 'Au';
+}
+
+.slick-dots li:nth-child(2)::after {
+    content: 'C';
+}
+
+.slick-dots li:nth-child(3)::after {
+    content: 'Li';
+}
+
+.slick-dots li:nth-child(4)::after {
+    content: 'Cu';
+}
+
+.slick-dots li:nth-child(3) {
+    top: 65px;
+    left: -1px;
+}
+
+.slick-dots li:nth-child(4) {
+    top: 97px;
+    left: 62px;
+}
+
+.slick-dots li button {
+    padding: 5px;    
+    width: 40px;
+    height: 60px;
+    background: #5096d5;
+    border: 1px solid #5096d5;
+    position: relative;
+    font-size: 0;
+}
+
+.slick-dots li button:hover, .slick-dots li.slick-active button, .slick-dots li:hover button {
+    background-color: #facd07;
+    border: 1px solid #facd07;
+}
+
+.slick-dots li button:hover::before, .slick-dots li.slick-active button::before,
+.slick-dots li:hover button::before {
+    border-right: 18px solid #facd07;
+}
+
+.slick-dots li button:hover::after, .slick-dots li.slick-active button::after,
+.slick-dots li:hover button::after {
+    border-left: 18px solid #facd07;
+}
+
+.slick-dots li button::before {
+    content: '';
+    display: block;
+    position: absolute;
+    border-right: 18px solid #5096d5;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    left: -19px;
+    top: 0;
+}
+
+.slick-dots li button::after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-left: 18px solid #5096d5;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    right: -19px;
+    top: 0;
+}
+
+button:focus {
+    outline: 0;
 }
 
 
@@ -187,8 +377,89 @@ header {
     line-height: 26px;
 }
 
+.mapSection {
+    position: relative;
+    /* max-width:1100px;
+    margin: auto; */
+}
+
+.mapperImage {
+    max-width: 100%;
+    margin:0 auto;
+}
 
 
+.mapSection .mapContent img {
+    max-width: 300px;
+    height: auto;
+}
+
+.computer {
+    top: 131px;
+    left: 393px;
+}
+
+.mobile {
+    top: 178px;
+    left: 533px;
+}
+
+.cup {
+    top: 342px;
+    left: 333px;
+}
+
+.mapper {
+    border: 1px solid #000;
+    background: #007dc5;
+    width: 24px;
+    height: 24px;
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.mapContent {
+    background: #facd07;
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    right: 0;
+    top: 93px;
+    z-index: 1;    
+    display: none;
+
+}
+
+.mapContent .mapContent-close {
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+    left: 10px;
+    top: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.map-content-div {
+    padding: 15px;
+    overflow-y: auto;
+    max-height: calc(100vh - 270px);
+}
+
+.mapContent.active {
+    display: block;
+}
+.mapContent h2 {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.mapContent p {
+    margin-bottom: 0;
+    color: #007dc5;
+}
 
 
 .keyProjectsWrapper {

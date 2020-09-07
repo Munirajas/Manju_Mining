@@ -7,7 +7,9 @@
     <link href="./fonts/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" crossorigin="anonymous">
+    <!-- Slick CSS-->
+    <link rel="stylesheet" type="text/css" href="./css/slick.css"/>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/styles.css">
 
@@ -52,7 +54,32 @@
         </div>
       </header>
       <section class="bannerWrapper">
-          <h3>Banner here..</h3>
+          <div class="banner-slider">
+            <div class="slider slider-1">
+                <div class="slider-content">
+                    <h1>A Gold & battery metals company</h1>
+                    <p>Focused on development of gold, Graphite & Lithium Assets</p>
+                </div>
+            </div>
+            <div class="slider slider-2">
+                <div class="slider-content">
+                    <h1>A Gold & battery metals company</h1>
+                    <p>Focused on development of gold, Graphite & Lithium Assets</p>
+                </div>
+            </div>
+            <div class="slider slider-3">
+                <div class="slider-content">
+                    <h1>A Gold & battery metals company</h1>
+                    <p>Focused on development of gold, Graphite & Lithium Assets</p>
+                </div>
+            </div>
+            <div class="slider slider-4">
+                <div class="slider-content">
+                    <h1>A Gold & battery metals company</h1>
+                    <p>Focused on development of gold, Graphite & Lithium Assets</p>
+                </div>
+            </div>
+          </div>
       </section>
       <section class="aboutUs-section">
         <div class="container">
@@ -80,6 +107,79 @@
         </div>
       </section>
       <section class="mapSection">
+        <img src="images/operations-map.jpg" alt="Workplace" usemap="#workmap" class="mapperImage" />
+
+        <map name="workmap">
+          <area shape="circle" class="mapper computer" data-attribute="computer" coords="405,143,12" alt="Computer" href="">
+          <area shape="circle" class="mapper mobile" data-attribute="mobile" coords="545,190,12" alt="Phone" href="">
+          <area shape="circle" class="mapper cup" data-attribute="cup" coords="354,345,12" alt="Cup of coffee" href="">
+        </map>
+        <div class="mapContent" id="computer">
+            <span class="mapContent-close"><i class="fas fa-times"></i></span>
+            <img src="images/operations-map.jpg" />
+            <div class="map-content-div">
+                <h2>PRODUCTION:</h2>
+                <p>680-740koz</p>
+                <p>2020 Guidance</p>
+                <h2>ALL-IN SUSTAINING COSTS:</h2>
+                <p>$845-895/oz</p>
+                <p>2020 Guidance</p>
+                <h2>P+P RESERVES:</h2>
+                <p>11Moz</p>
+                <h2>M+I RESOURCES:</h2>
+                <p>21Moz</p>
+                <h2>EMPLOYEES:</h2>
+                <p>~6,000</p>
+                <h2>EXPLORATION TENEMENTS:</h2>
+                <p>10,090km²</p>
+                <h2>5-YEAR DISCOVERY:</h2>
+                <p>10-15Moz</p>
+            </div>
+        </div>
+        <div class="mapContent" id="mobile">
+            <span class="mapContent-close"><i class="fas fa-times"></i></span>
+            <img src="images/operations-map.jpg" />
+            <div class="map-content-div">
+                <h2>PRODUCTION: 2</h2>
+                <p>680-740koz</p>
+                <p>2020 Guidance</p>
+                <h2>ALL-IN SUSTAINING COSTS:</h2>
+                <p>$845-895/oz</p>
+                <p>2020 Guidance</p>
+                <h2>P+P RESERVES:</h2>
+                <p>11Moz</p>
+                <h2>M+I RESOURCES:</h2>
+                <p>21Moz</p>
+                <h2>EMPLOYEES:</h2>
+                <p>~6,000</p>
+                <h2>EXPLORATION TENEMENTS:</h2>
+                <p>10,090km²</p>
+                <h2>5-YEAR DISCOVERY:</h2>
+                <p>10-15Moz</p>
+            </div>
+        </div>
+        <div class="mapContent" id="cup">
+            <span class="mapContent-close"><i class="fas fa-times"></i></span>
+            <img src="images/operations-map.jpg" />
+            <div class="map-content-div">
+                <h2>PRODUCTION: 3</h2>
+                <p>680-740koz</p>
+                <p>2020 Guidance</p>
+                <h2>ALL-IN SUSTAINING COSTS:</h2>
+                <p>$845-895/oz</p>
+                <p>2020 Guidance</p>
+                <h2>P+P RESERVES:</h2>
+                <p>11Moz</p>
+                <h2>M+I RESOURCES:</h2>
+                <p>21Moz</p>
+                <h2>EMPLOYEES:</h2>
+                <p>~6,000</p>
+                <h2>EXPLORATION TENEMENTS:</h2>
+                <p>10,090km²</p>
+                <h2>5-YEAR DISCOVERY:</h2>
+                <p>10-15Moz</p>
+            </div>
+        </div>
       </section>
       <section class="keyProjectsWrapper">
         <div class="container">
@@ -251,10 +351,17 @@
       </footer>
 
     <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS, then Slick JS -->
+    <script src="./js/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="./js/popper.min.js" crossorigin="anonymous"></script>
+    <script src="./js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./js/slick.min.js"></script>
     <script src="./js/custome.js" ></script>
+
+    <script>
+        window.FontAwesomeConfig = {
+          searchPseudoElements: true
+        }
+      </script>
 </body>
 </html>
