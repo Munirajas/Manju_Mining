@@ -413,6 +413,7 @@ button:focus {
 
 .mapSection {
     position: relative;
+    overflow: hidden;
 }
 
 .mapperImage {
@@ -483,11 +484,11 @@ button:focus {
     position: absolute;
     width: 300px;
     height: 100%;
-    right: 0;
+    right: -335px;
     top: 0;
     z-index: 1;    
-    display: none;
-
+    /* display: none; */
+    transition: all .5s;
 }
 
 .mapContent .mapContent-close {
@@ -537,7 +538,9 @@ button:focus {
 }
 
 .mapContent.active {
-    display: block;
+    /* display: block; */
+    right: 0;
+    
 }
 .mapContent h2 {
     font-size: 16px;
