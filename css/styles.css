@@ -229,7 +229,7 @@ header {
 
 .slick-prev::before {
     content: '\f053';
-    font-family: "Font Awesome 5 Free";
+    font-family: "Font Awesome 5 Brands";
     font-weight: normal;
     color: #007dc5 !important;
     font-size: 20px;
@@ -237,7 +237,7 @@ header {
 
 .slick-next::before {
     content: '\f054';
-    font-family: "Font Awesome 5 Free";
+    font-family: "Font Awesome 5 Brands";
     font-weight: normal;
     color: #007dc5 !important;
     font-size: 20px;
@@ -433,8 +433,16 @@ button:focus {
     border-radius: 50%;
 }
 
+.mapper::after {
+    content: \f3c5;
+    font-family: "Font Awesome 5 Brands";
+    font-weight: normal;
+    color: #007dc5 !important;
+    font-size: 20px;
+}
+
 .mapContent {
-    background: #facd07;
+    background: #fff;
     position: fixed;
     width: 300px;
     height: 100%;
@@ -459,6 +467,7 @@ button:focus {
     padding: 15px;
     overflow-y: auto;
     max-height: calc(100vh - 270px);
+    background-color: #fff;
 }
 
 .mapContent.active {
@@ -649,7 +658,7 @@ footer {
 }
 
 .footerLogo a {
-    display: block;
+    display: inline-block;
     padding: 5px;
 }
 
