@@ -9,6 +9,10 @@ $(document).ready(function(){
         $(".sideMenuWrapper").removeClass("active");
     });
 
+    $(".sideBaroverlay").click(function(){
+        $(".sideMenuWrapper").removeClass("active");
+    });
+    
     $(".hasDropdown").click(function(){
         $(this).parent().toggleClass("menuOpen");
     });

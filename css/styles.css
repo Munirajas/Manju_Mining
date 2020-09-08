@@ -55,11 +55,11 @@ header {
 }
 
 .sideMenuWrapper {
-    display: none;
+    /* display: none; */
 }
 
 .sideMenuWrapper.active {
-    display: block;
+    /* display: block; */
 }
 
 .closeMenu {
@@ -81,7 +81,7 @@ header {
     left:0;
     width: 100%;
     height: 100%;
-    /* display: none; */
+    display: none;
     z-index: 3;
 }
 .menuWrapper {
@@ -91,8 +91,20 @@ header {
     height: 100%;
     position: fixed;
     top: 0;
-    left: 0;
+    left: -25%;
     z-index: 4;
+    transition: left 0.4s;
+}
+.sideMenuWrapper.active .sideBaroverlay{
+    display: block;
+}
+
+.highlight {
+    color: #007E7A ;
+}
+.sideMenuWrapper.active .menuWrapper {
+    left: 0;
+    transition: left 0.4s;
 }
 
 .scrollWrapper {
@@ -231,7 +243,7 @@ header {
     content: '\f053';
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    color: #007dc5 !important;
+    color: #007E7A !important;
     font-size: 20px;
 }
 
@@ -239,7 +251,7 @@ header {
     content: '\f054';
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    color: #007dc5 !important;
+    color: #007E7A !important;
     font-size: 20px;
 }
 
@@ -256,7 +268,7 @@ header {
     height: 300px;
     position: absolute;
     top: 155px;
-    /* border: 1px solid #007dc5; */
+    /* border: 1px solid #007E7A; */
     padding: 0;
     right: 100px;
 }
@@ -318,8 +330,8 @@ header {
     padding: 5px;    
     width: 40px;
     height: 60px;
-    background: #5096d5;
-    border: 1px solid #5096d5;
+    background: #007E7A;
+    border: 1px solid #007E7A;
     position: relative;
     font-size: 0;
 }
@@ -343,9 +355,9 @@ header {
     content: '';
     display: block;
     position: absolute;
-    border-right: 18px solid #5096d5;
-    border-top: 30px solid transparent;
-    border-bottom: 30px solid transparent;
+    border-right: 18px solid #007E7A;
+    border-top: 29px solid transparent;
+    border-bottom: 29px solid transparent;
     left: -19px;
     top: 0;
 }
@@ -354,9 +366,9 @@ header {
     content: '';
     display: block;
     position: absolute;
-    border-left: 18px solid #5096d5;
-    border-top: 30px solid transparent;
-    border-bottom: 30px solid transparent;
+    border-left: 18px solid #007E7A;
+    border-top: 29px solid transparent;
+    border-bottom: 29px solid transparent;
     right: -19px;
     top: 0;
 }
@@ -422,8 +434,8 @@ button:focus {
 }
 
 .mapper {
-    /* border: 1px solid #000;
-    background: #007dc5;
+    border: 1px solid #000;
+    background: #007E7A;
     width: 24px;
     height: 24px;
     display: block; */
@@ -532,7 +544,7 @@ button:focus {
 
 .mapContent p {
     margin-bottom: 0;
-    color: #007dc5;
+    color: #007E7A;
 }
 
 
@@ -613,6 +625,7 @@ button:focus {
     transition: bottom 0.3s;
     justify-content: center;
     align-items: center;
+    transition: bottom 0.5s;
 }
 
 .moreDetailsWrapper a {
@@ -630,7 +643,7 @@ button:focus {
 .projectItemContainer:focus .moreDetailsWrapper {
     /* display: block; */
     bottom: 0;
-    transition: bottom 0.3s;
+    transition: bottom 0.5s;
 }
 
 .postSection {
