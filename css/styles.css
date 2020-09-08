@@ -413,8 +413,6 @@ button:focus {
 
 .mapSection {
     position: relative;
-    /* max-width:1100px;
-    margin: auto; */
 }
 
 .mapperImage {
@@ -429,18 +427,18 @@ button:focus {
 }
 
 .computer {
-    top: 131px;
-    left: 393px;
+    top: 98px;
+    left: 389px;
 }
 
 .mobile {
-    top: 178px;
-    left: 533px;
+    top: 144px;
+    left: 530px;
 }
 
 .cup {
-    top: 342px;
-    left: 333px;
+    top: 300px;
+    left: 338px;
 }
 
 .mapper {
@@ -448,18 +446,50 @@ button:focus {
     background: #007E7A;
     width: 24px;
     height: 24px;
-    display: block;
+    display: block; */
     position: absolute;
     border-radius: 50%;
+    font-size: 40px;
+    color: #007dc5 !important;
+}
+
+.mapper::after {
+    content: '\f3c5';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 0;
+}
+
+.mapImageContent {
+    position: absolute;
+    bottom: 30px;
+    color: #fff;
+    left: 150px;
+    max-width: 60%;
+}
+
+.mapImageContent h2 {
+    font-size: 32px;
+}
+
+.mapImageContent p {
+    font-size: 20px;
+}
+
+.mapImageContent .btn {
+    border: 2px solid #fff;
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 16px;
 }
 
 .mapContent {
-    background: #facd07;
-    position: fixed;
+    background: #fff;
+    position: absolute;
     width: 300px;
     height: 100%;
     right: 0;
-    top: 93px;
+    top: 0;
     z-index: 1;    
     display: none;
 
@@ -469,16 +499,46 @@ button:focus {
     position: absolute;
     color: #fff;
     font-size: 20px;
-    left: 10px;
+    left: -31px;
     top: 10px;
     padding: 5px;
     cursor: pointer;
+    background-color: #007dc5;
+    z-index: 1;    
+}
+
+.mapContent-close-icon {
+    border-right: 2px solid #007E7A;
+    display: inline-block;
+    padding: 0 5px;
+}
+
+.map-location-name a {
+    color: #fff;
+    font-size: 16px;
+}
+
+.map-location-name a:hover {
+    text-decoration: underline;
+}
+
+.map-location-name:after {
+    content: '';
+    position: absolute;
+    right: -20px;
+    top: 0px;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-top: 39px solid #007dc5;
+    z-index: -1;
 }
 
 .map-content-div {
     padding: 15px;
     overflow-y: auto;
     max-height: calc(100vh - 270px);
+    background-color: #fff;
 }
 
 .mapContent.active {
@@ -670,7 +730,7 @@ footer {
 }
 
 .footerLogo a {
-    display: block;
+    display: inline-block;
     padding: 5px;
 }
 
