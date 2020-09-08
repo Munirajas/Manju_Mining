@@ -215,6 +215,10 @@ header {
     left: 100px;
 }
 
+.slider-content p {
+    font-size: 18px;
+}
+
 .slick-prev, .slick-next {
     top: 50%;
     -webkit-transform: translateY(-50%);
@@ -260,7 +264,7 @@ header {
     right: 15px;
 }
 
-.slick-dots {
+.bannerWrapper .slick-dots {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -273,19 +277,19 @@ header {
     right: 100px;
 }
 
-.slick-dots li {
+.bannerWrapper .slick-dots li {
     list-style-type: none;
     position: absolute;
 }
 
-.slick-dots li:nth-child(2) {
+.bannerWrapper .slick-dots li:nth-child(2) {
     left: 62px;
     top: 33px;
 }
 
-.slick-dots li:nth-child(1)::after, .slick-dots li:nth-child(2)::after, 
-.slick-dots li:nth-child(3)::after, .slick-dots li:nth-child(4)::after,
-.slick-prev::before, .slick-next::before {
+.bannerWrapper .slick-dots li:nth-child(1)::after,.bannerWrapper  .slick-dots li:nth-child(2)::after, 
+.bannerWrapper .slick-dots li:nth-child(3)::after,.bannerWrapper .slick-dots li:nth-child(4)::after,
+.bannerWrapper .slick-prev::before, .slick-next::before {
     color: #fff;
     z-index: 1;
     position: absolute;
@@ -296,37 +300,37 @@ header {
     transform: translate(-50%,-50%);
 }
 
-.slick-dots li:hover {
+.bannerWrapper .slick-dots li:hover {
     cursor: pointer;
 }
 
-.slick-dots li:nth-child(1)::after {
+.bannerWrapper  .slick-dots li:nth-child(1)::after {
     content: 'Au';
 }
 
-.slick-dots li:nth-child(2)::after {
+.bannerWrapper .slick-dots li:nth-child(2)::after {
     content: 'C';
 }
 
-.slick-dots li:nth-child(3)::after {
+.bannerWrapper .slick-dots li:nth-child(3)::after {
     content: 'Li';
 }
 
-.slick-dots li:nth-child(4)::after {
+.bannerWrapper .slick-dots li:nth-child(4)::after {
     content: 'Cu';
 }
 
-.slick-dots li:nth-child(3) {
+.bannerWrapper .slick-dots li:nth-child(3) {
     top: 65px;
     left: -1px;
 }
 
-.slick-dots li:nth-child(4) {
+.bannerWrapper .slick-dots li:nth-child(4) {
     top: 97px;
     left: 62px;
 }
 
-.slick-dots li button {
+.bannerWrapper .slick-dots li button {
     padding: 5px;    
     width: 40px;
     height: 60px;
@@ -336,22 +340,26 @@ header {
     font-size: 0;
 }
 
-.slick-dots li button:hover, .slick-dots li.slick-active button, .slick-dots li:hover button {
+.bannerWrapper .slick-dots li button:hover, 
+.bannerWrapper .slick-dots li.slick-active button, 
+.bannerWrapper .slick-dots li:hover button {
     background-color: #facd07;
     border: 1px solid #facd07;
 }
 
-.slick-dots li button:hover::before, .slick-dots li.slick-active button::before,
-.slick-dots li:hover button::before {
+.bannerWrapper .slick-dots li button:hover::before, 
+.bannerWrapper .slick-dots li.slick-active button::before,
+.bannerWrapper .slick-dots li:hover button::before {
     border-right: 18px solid #facd07;
 }
 
-.slick-dots li button:hover::after, .slick-dots li.slick-active button::after,
-.slick-dots li:hover button::after {
+.bannerWrapper .slick-dots li button:hover::after,
+.bannerWrapper  .slick-dots li.slick-active button::after,
+.bannerWrapper .slick-dots li:hover button::after {
     border-left: 18px solid #facd07;
 }
 
-.slick-dots li button::before {
+.bannerWrapper .slick-dots li button::before {
     content: '';
     display: block;
     position: absolute;
@@ -362,7 +370,7 @@ header {
     top: 0;
 }
 
-.slick-dots li button::after {
+.bannerWrapper .slick-dots li button::after {
     content: '';
     display: block;
     position: absolute;
@@ -591,11 +599,11 @@ button:focus {
 }
 
 .postSection h3 {
-    font-size: 24px;
+    font-size: 28px;
     line-height: 34px;
     margin-bottom: 65px;
     position: relative;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
     text-align: center;
 }
 

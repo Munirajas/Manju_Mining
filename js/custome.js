@@ -17,6 +17,17 @@ $(document).ready(function(){
         $(this).parent().toggleClass("menuOpen");
     });
 
+     // Banner Slider
+    //  $('.blogsList').slick({
+    //     // dots: true,
+    //     infinite: true,
+    //     speed: 500,
+    //     fade: true,
+    //     // cssEase: 'linear',
+    //     slidesToShow: 4,
+    //     slidesToScroll: 1,
+    // });
+
     // Banner Slider
     $('.banner-slider').slick({
         dots: true,
