@@ -441,12 +441,7 @@ button:focus {
     left: 338px;
 }
 
-.mapper {
-    border: 1px solid #000;
-    background: #007E7A;
-    width: 24px;
-    height: 24px;
-    display: block; */
+.mapper {    
     position: absolute;
     border-radius: 50%;
     font-size: 40px;
