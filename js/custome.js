@@ -33,7 +33,7 @@ $(document).ready(function(){
         $(elem).addClass('active');
     });
 
-    $('.mapContent-close').on('click',function(){
+    $('.mapContent-close-icon').on('click',function(){
         $('.mapContent').removeClass('active');
         $('.mapper').removeClass('active');
     })
